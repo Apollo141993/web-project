@@ -1,49 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>HTML Sample</title>
-  <link rel="shortcut icon" href="https://placekitten.com/96/139" type="image/x-icon" />
-  <script src="https://unpkg.com/htmx.org@1.9.10"
-    integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
-    crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
-
 <body>
-  <h2>CatPhotoApp</h2>
-  <main>
-    <p>Click here to view more <a href="#">cat photos</a>.</p>
+  <header>
+    <nav class="header">
+        <div class="header__container">
+            <div class="header__content">
+                <div class="header__content-items">
+                    <img class="header__content-items-logo" src="img/logo.svg" alt="Figma Land LOGO">
+                    <button class="header__content-items-burger">
+                        <div class="header__content-items-burger-item"></div>
+                        <div class="header__content-items-burger-item"></div>
+                        <div class="header__content-items-burger-item"></div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+<main> 
+    <section class="header__hero">
+        <div class="header__hero-container">
+            <div class="header__hero-content">
+                <h1 class="header__hero-content-title">The best products start with Figma</h1>
+                <p class="header__hero-content-subtitle">Most calendars are designed for teams</p>
+                <a href="#" class="header__hero-content-button">Try For Free</a>
+            </div>
+        </div>
+    </section>
+    <section class="features">
+        <div class="features__container">
+            <div class="features__text">
+                <h2 class="features__content-title">Features</h2>
+                <p class="features__content-subtitle">Most calendars are designed for teams</p>
+            </div>
+            <div class="features__video">
+                <img class="features__content-video" src="img/features-screen.svg" alt="features-video">
+            </div>
+            <div class="features__list">
+                <div class="open__type">
+                    <img src="features__" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer>
 
-    <a href="#"><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg"
-        alt="A cute orange cat lying on its back."></a>
-
-    <p>Things cats love:</p>
-    <ul>
-      <li>cat nip</li>
-      <li>laser pointers</li>
-      <li>lasagna</li>
-    </ul>
-    <p>Top 3 things cats hate:</p>
-    <ol>
-      <li>flea treatment</li>
-      <li>thunder</li>
-      <li>other cats</li>
-    </ol>
-
-    <form action="https://www.freecatphotoapp.com/submit-cat-photo">
-      <label for="indoor"><input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked> Indoor</label>
-      <label for="outdoor"><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label><br>
-      <label for="loving"><input id="loving" type="checkbox" name="personality" value="loving" checked> Loving</label>
-      <label for="lazy"><input id="lazy" type="checkbox" name="personality" value="lazy"> Lazy</label>
-      <label for="energetic"><input id="energetic" type="checkbox" name="personality" value="energetic">
-        Energetic</label><br>
-      <input type="text" placeholder="cat photo URL" required>
-      <button type="submit">Submit</button>
-    </form>
-  </main>
+</footer>
 </body>
-
 </html>
